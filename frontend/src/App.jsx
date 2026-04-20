@@ -32,12 +32,12 @@ function App() {
   }, [filter]);
 
   const createTask = async (task) => {
-    if(!task.title.trim()) return;
-    try{
+    if (!task.title.trim()) return;
+    try {
       const data = await createTaskApi(task);
       setTasks([...tasks, data]);
       setShowModal(false);
-    }catch(err){
+    } catch (err) {
       console.log("Error creating task", err);
     }
   };
@@ -114,7 +114,9 @@ function App() {
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
           {/* Task Form */}
           <div className="w-full max-w-3xl px-8">
-            <TaskForm onClose={() => setShowModal(false)} onSubmit={createTask} />
+            <TaskForm 
+            onClose={() => setShowModal(false)} 
+            onSubmit={createTask} />
           </div>
         </div>
       )}

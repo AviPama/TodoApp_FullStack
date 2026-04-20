@@ -16,9 +16,14 @@ function TaskForm({ onClose, onSubmit }) {
                 <h2 className="text-2xl font-bold text-white">Add New Task</h2>
 
                 {/* Close Button */}
-                <button onClick={onClose} className="text-gray-400 hover:text-red-500 transition">
-                    <X size={26}/>
-                </button>
+                {onClose && (
+                    <button
+                        onClick={onClose}
+                        className="text-gray-400 hover:text-red-500 transition"
+                    >
+                        <X size={26} />
+                    </button>
+                )}
             </div>
 
             {/* Inputs */}

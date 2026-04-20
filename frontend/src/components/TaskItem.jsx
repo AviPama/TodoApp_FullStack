@@ -18,7 +18,7 @@ function TaskItem( {task, editingTask, setEditingTask, updateTask, deleteTask, t
                         {/* Left Side checkbox + Details */}
                         <div className="flex items-start space-x-3 flex-1">
                             {/* Toggle Completion */}
-                            <button className={'mt-1 w-6 h-6 rounded-full border-2 flex items-center justify-center transition duration-200'}
+                            <button className={'mt-1 w-6 h-6 rounded-full border-2 flex items-center justify-center transition duration-200 ${task.completed ? "bg-green-500 border-green-500" hover:-bg-green-600 : "border-gray-400 hover:border-gray-600" }'}
                             onClick={() => toggleTask(task._id)}
                             >
                                 {task.completed && <Check size={16} />}
