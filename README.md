@@ -111,12 +111,4 @@ Navigate to http://localhost:3000 to view the application.
 - Edit a Task — Update the task title or details as needed.
 - Delete a Task — Remove a task from your list when it's no longer needed.
 
-### API Endpoints
-|Method	|Endpoint	    |Description             |
-|........|...............|........................|
-|GET	   |/api/todos	    |Retrieve all tasks      |
-|POST	   |/api/todos	    |Create a new task       |
-|PUT	   |/api/todos/:id |Update an existing task |
-|DELETE	|/api/todos/:id |Delete a task           |
-
 🤝 Contributions are welcome!
