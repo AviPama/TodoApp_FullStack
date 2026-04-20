@@ -80,12 +80,12 @@ cd server
 npm install
 
 
-Install frontend dependencies
+Install frontend dependencies:
 cd ../client
 npm install
 
 
-Configure environment variables
+Configure environment variables:
 Create a .env file in the server directory:
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/todoapp
@@ -102,7 +102,8 @@ cd client
 npm start
 
 
-Open in your browser: Navigate to http://localhost:3000 to view the application.
+Open in your browser:
+Navigate to http://localhost:3000 to view the application.
 
 📖 Usage
 Add a Task — Use the input form to create a new task. It will appear with a Pending status.
@@ -117,24 +118,4 @@ POST	/api/todos	    Create a new task
 PUT	    /api/todos/:id	Update an existing task
 DELETE	/api/todos/:id	Delete a task
 
-
-📁 Project Structure
-todo-app/
-├── client/                 # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── App.js          # Main application component
-│   │   └── index.js        # Entry point
-│   └── package.json
-├── server/                 # Express backend
-│   ├── models/             # Mongoose schemas
-│   ├── routes/             # API route handlers
-│   ├── server.js           # Server entry point
-│   └── package.json
-├── .gitignore
-└── README.md
-
-
-🤝 Contributing
-Contributions are welcome!
+🤝 Contributions are welcome!
